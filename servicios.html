@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - MAES Estudio de Ingeniería</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        .services-hero {
+            height: 60vh;
+            min-height: 400px;
+            background: linear-gradient(rgba(0, 41, 58, 0.8), rgba(0, 41, 58, 0.8)), url('carrucel/2.PNG');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+        }
+
+        .services-detail-grid {
+            padding: 100px 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+        }
+
+        .service-detail-card {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 0;
+            box-shadow: 0 15px 45px rgba(0, 168, 204, 0.1);
+            transition: all 0.4s ease;
+            border: 1px solid rgba(0, 168, 204, 0.1);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .service-card-image {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .service-card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .service-detail-card:hover .service-card-image img {
+            transform: scale(1.1);
+        }
+
+        .service-card-content {
+            padding: 40px;
+        }
+
+        .service-detail-card i {
+            font-size: 35px;
+            color: var(--white);
+            background: var(--primary-color);
+            width: 70px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin-top: -35px;
+            position: relative;
+            z-index: 2;
+            border: 5px solid var(--white);
+            box-shadow: 0 5px 15px rgba(0, 168, 204, 0.2);
+        }
+
+        .service-detail-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--secondary-color);
+        }
+
+        .service-detail-card p {
+            color: var(--text-color);
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .service-features {
+            list-style: none;
+            padding: 0;
+        }
+
+        .service-features li {
+            padding-left: 25px;
+            position: relative;
+            margin-bottom: 12px;
+            color: var(--text-color);
+            font-weight: 500;
+        }
+
+        .service-features li::before {
+            content: "\f00c";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+        }
+
+        .cta-section-simple {
+            padding: 80px 0;
+            background: var(--secondary-color);
+            color: var(--white);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="materials/Recurso 2@2x.png" alt="MAES Logo" class="logo-img">
+                </a>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li><a href="index.html#inicio" class="btn-contact">Inicio</a></li>
+                    <li><a href="servicios.html" class="active">Servicios</a></li>
+                    <li><a href="index.html#proyectos" class="btn-contact">Proyectos</a></li>
+                    <li><a href="index.html#sobre-nosotros" class="btn-contact">Sobre nosotros</a></li>
+                    <li><a href="index.html#contacto" class="btn-contact">Contactanos</a></li>
+                    <li><a href="trabaja.html" class="btn-contact">Trabaja con nosotros</a></li>
+                </ul>
+                <div class="menu-toggle" id="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Services Hero -->
+    <section class="services-hero">
+        <div class="container" style="position: relative; z-index: 2;">
+            <span class="hero-subtitle"
+                style="color: var(--primary-color); letter-spacing: 4px; display: block; margin-bottom: 20px;">EXPERIENCIA
+                Y PRECISIÓN</span>
+            <h1 class="hero-title" style="margin-bottom: 20px;">Nuestros Servicios Especializados</h1>
+            <p class="hero-description" style="max-width: 800px; margin: 0 auto;">Soluciones integrales de ingeniería
+                civil diseñadas para superar los desafíos más complejos de la construcción moderna.</p>
+        </div>
+    </section>
+
+    <!-- Detailed Services Grid -->
+    <section class="services-detail-section">
+        <div class="container">
+            <div class="services-detail-grid">
+
+                <!-- Servicio 1: Diseño Estructural -->
+                <div class="service-detail-card">
+                    <div class="service-card-image">
+                        <img src="materials/fondos1.jpeg" alt="Diseño Estructural">
+                    </div>
+                    <div class="service-card-content">
+                        <i class="fas fa-drafting-pill"></i>
+                        <h3>Cálculo de Estructuras</h3>
+                        <p>Diseño avanzado y verificación de estructuras en múltiples materiales, optimizando la
+                            seguridad y el costo de su proyecto.</p>
+                        <ul class="service-features">
+                            <li>Hormigón Armado y Postensado</li>
+                            <li>Estructuras Metálicas de Grandes Luces</li>
+                            <li>Steel Framing y Madera</li>
+                            <li>Análisis Sísmico Avanzado</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Servicio 2: Consultoría Técnica -->
+                <div class="service-detail-card">
+                    <div class="service-card-image">
+                        <img src="materials/fondos2.jpeg" alt="Consultoría Técnica">
+                    </div>
+                    <div class="service-card-content">
+                        <i class="fas fa-user-tie"></i>
+                        <h3>Consultoría Técnica</h3>
+                        <p>Asesoramiento integral desde la etapa de anteproyecto hasta la ejecución final para estudios
+                            de arquitectura y constructoras.</p>
+                        <ul class="service-features">
+                            <li>Optimización de Proyectos</li>
+                            <li>Auditorías Estructurales</li>
+                            <li>Informes de Patologías</li>
+                            <li>Verificación de Normativa</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Servicio 3: Direccion tecnica de obras -->
+                <div class="service-detail-card">
+                    <div class="service-card-image">
+                        <img src="materials/fondos3.jpeg" alt="Direccion tecnica de obras">
+                    </div>
+                    <div class="service-card-content">
+                        <i class="fas fa-hard-hat"></i>
+                        <h3>Direccion tecnica de obras</h3>
+                        <p>Supervisión técnica especializada para garantizar que la ejecución se ajuste estrictamente al
+                            proyecto de ingeniería.</p>
+                        <ul class="service-features">
+                            <li>Inspecciones de Armaduras</li>
+                            <li>Control de Calidad de Materiales</li>
+                            <li>Resolución de Imprevistos</li>
+                            <li>Certificación de Etapas</li>
+                        </ul>
+                    </div>
+                </div>
+
+               
+
+                <!-- Servicio 4: Relevamientos Especiales -->
+                <div class="service-detail-card">
+                    <div class="service-card-image">
+                        <img src="materials/fondos5.jpg" alt="Verificación Existente">
+                    </div>
+                    <div class="service-card-content">
+                        <i class="fas fa-compass"></i>
+                        <h3>Verificación Existente</h3>
+                        <p>Evaluación y diagnóstico de estructuras existentes para ampliaciones, refuerzos o cambios de
+                            destino.</p>
+                        <ul class="service-features">
+                            <li>Cateos y Ensayos</li>
+                            <li>Relevamiento Estructural</li>
+                            <li>Refuerzos de Carbono/Acero</li>
+                            <li>Verificación de Carga</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Servicio 5: Sistema 3d y Planos 3d -->
+                <div class="service-detail-card">
+                    <div class="service-card-image">
+                        <img src="WEB site/Pergola metalica - Area social en predio deportivo/Escala club.JPG" alt="Sistema 3d y Planos 3d">
+                    </div>
+                    <div class="service-card-content">
+                        <i class="fas fa-compass"></i>
+                        <h3>Sistema 3d y Planos 3d</h3>
+                        <p>Cada estructura que diseñamos es analizada con software especializado de cálculo estructural, garantizando seguridad, eficiencia y optimización de costos.
+                         Integramos herramientas de modelado BIM y análisis estructural que nos permiten:
+</p>
+                        <ul class="service-features">
+                            <li>Reducir errores en obra</li>
+                            <li>Evitar sobredimensionamientos innecesarios</li>
+                            <li>Mejorar la coordinación con arquitectura</li>
+                            <li>Entregar documentación clara y precisa</li>
+                        </ul>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section-simple">
+        <div class="container">
+            <h2 style="color: white; margin-bottom: 25px;">¿Listo para iniciar tu próximo gran proyecto?</h2>
+            <p style="margin-bottom: 40px; font-size: 1.1rem; opacity: 0.9;">Nuestro equipo de expertos está preparado
+                para brindarte la mejor solución técnica.</p>
+            <a href="index.html#contacto" class="btn btn-primary"
+                style="padding: 20px 50px; font-size: 1.1rem;">SOLICITAR PRESUPUESTO</a>
+        </div>
+    </section>
+
+    <!-- Marquee Animation -->
+    <div class="logo-marquee">
+        <div class="marquee-content">
+            <!-- First Set -->
+            <div class="marquee-item">
+                <img src="materials/Recurso 2@2x.png" alt="MAES">
+                <span class="marquee-text">Ingeniería que avanza</span>
+            </div>
+            <div class="marquee-item">
+                <img src="materials/Recurso 2@2x.png" alt="MAES">
+                <span class="marquee-text">Ingeniería que avanza</span>
+            </div>
+            <div class="marquee-item">
+                <img src="materials/Recurso 2@2x.png" alt="MAES">
+                <span class="marquee-text">Ingeniería que avanza</span>
+            </div>
+            <div class="marquee-item">
+                <img src="materials/Recurso 2@2x.png" alt="MAES">
+                <span class="marquee-text">Ingeniería que avanza</span>
+            </div>
+            <div class="marquee-item">
+                <img src="materials/Recurso 2@2x.png" alt="MAES">
+                <span class="marquee-text">Ingeniería que avanza</span>
+            </div>
+            <!-- Second Set (Duplicate for smooth scroll) -->
+            <div class="marquee-item">
+                <img src="materials/Recurso 2@2x.png" alt="MAES">
+                <span class="marquee-text">Ingeniería que avanza</span>
+            </div>
+            <div class="marquee-item">
+                <img src="materials/Recurso 2@2x.png" alt="MAES">
+                <span class="marquee-text">Ingeniería que avanza</span>
+            </div>
+            <div class="marquee-item">
+                <img src="materials/Recurso 2@2x.png" alt="MAES">
+                <span class="marquee-text">Ingeniería que avanza</span>
+            </div>
+            <div class="marquee-item">
+                <img src="materials/Recurso 2@2x.png" alt="MAES">
+                <span class="marquee-text">Ingeniería que avanza</span>
+            </div>
+            <div class="marquee-item">
+                <img src="materials/Recurso 2@2x.png" alt="MAES">
+                <span class="marquee-text">Ingeniería que avanza</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer  -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="materials/Recurso 2@2x.png" alt="MAES Logo" style="height: 40px;">
+                </div>
+                <div class="footer-contact">
+                    <p style="margin: 5px 0;"><i class="fas fa-phone"></i> (+54) 3804 219641</p>
+                    <p style="margin: 5px 0;"><i class="fas fa-envelope"></i> info@maesingenieria.com.ar</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/people/maesingenieria/100068295727493/" target="_blank"
+                        rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/maesingenieria/" target="_blank" rel="noopener noreferrer"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/maes-estudio/" target="_blank"
+                        rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2026 MAES Estudio de Ingeniería. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

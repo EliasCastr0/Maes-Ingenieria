@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAES | Estudio de Ingeniería</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="materials/Recurso 1@2x.png" type="image/png">
+</head>
+<!-- local  http://127.0.0.1:5500/index.html -->
+
+<body>
+
+    <!-- Header Section -->
+    <header class="main-header">
+        <div class="container header-container">
+            <!-- Logo (izq) -->
+            <div class="logo">
+                <a href="#">
+                    <img src="materials/Recurso 2@2x.png" alt="MAES Logo" class="logo-img">
+                </a>
+            </div>
+
+            <!-- Navigation (Center) -->
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li><a href="index.html#inicio" class="btn-contact active">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="servicios.html" class="dropdown-toggle">Servicios <i
+                                class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="servicios.html">Todos los Servicios</a></li>
+                            <li><a href="index.html#proyectos">Proyectos Destacados</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#proyectos" class="btn-contact">Proyectos</a></li>
+                    <li><a href="#sobre-nosotros" class="btn-contact">Sobre nosotros</a></li>
+                    <li><a href="#contacto" class="btn-contact">Contactanos</a></li>
+                    <li><a href="trabaja.html" class="btn-contact">Trabaja con nosotros</a></li>
+                </ul>
+                <div class="menu-toggle" id="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Banner principal -->
+    <section id="inicio" class="hero-section">
+        <div class="hero-background">
+            <img src="materials/fondos1.jpeg" alt="Background" class="hero-bg-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-badge">
+                <span class="hero-subtitle">MAES</span>
+                <span class="hero-separator">|</span>
+                <span class="hero-tagline typing-animation">Ingeniería que avanza</span>
+            </div>
+            <h1 class="hero-title">Soluciones de Ingeniería Estructural para Edificaciones</h1>
+            <p class="hero-description">Desarrollo de proyectos de estructuras bajo implementación de metodologías
+                actuales con la más alta calidad y precisión.</p>
+            <div class="hero-buttons">
+                <a href="#servicios" class="btn btn-primary">VER SERVICIOS</a>
+                <a href="#contacto" class="btn btn-outline">CONTACTANOS</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-indicator">
+                <span class="scroll-text">Desplázate</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- porque trabajar con nosotros (Stats) -->
+    <section class="why-us-section">
+        <div class="container why-us-container">
+            <div class="why-us-text">
+                <h3>PORQUE GENERAMOS RESULTADOS</h3>
+                <h2>Conociendo las características de la edificación, elegimos y proyectamos la estructura más eficiente
+                    según las variables que se manejen (funcionalidad, estética y económica). Para ello, combinamos
+                    nuestro conocimiento, experiencia y la tecnología más actualizada del mercado.</h2>
+                <p>Trabajamos con estudios de arquitectura, constructoras y desarrolladores en proyectos de ingeniería y
+                    arquitectura que presentan desafíos técnicos de alta complejidad.</p>
+                <a href="#contacto" class="btn btn-primary">PROYECTÁ CON NOSOTROS</a>
+            </div>
+            <div class="why-us-stats">
+                <div class="stat-item">
+                    <div class="stat-number">+10mil</div>
+                    <div class="stat-label">Superficie proyectada (m2)</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">+5</div>
+                    <div class="stat-label">Años de experiencia</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">+30</div>
+                    <div class="stat-label">Proyectos</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Cumplimiento</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us/sobre nosotros -->
+    <section id="sobre-nosotros" class="about-section">
+        <div class="container about-container">
+            <div class="about-image">
+                <div class="about-carousel">
+                    <div class="carousel-track">
+                        <div class="carousel-slide active">
+                            <img src="carrucel/1.PNG" alt="Proyecto de Ingeniería 1">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="carrucel/2.PNG" alt="Proyecto de Ingeniería 2">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="carrucel/3.PNG" alt="Proyecto de Ingeniería 3">
+                        </div>
+                    </div>
+                    <div class="carousel-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-content">
+                <h2>Sobre MAES Estudio de Ingeniería</h2>
+                <p class="lead">Excelencia en diseño, cálculo y verificación estructural</p>
+                <p>Somos MAES Estudio de Ingeniería. Nos especializamos en diseño, cálculo y verificación estructural en
+                    hormigón armado, acero y madera.</p>
+                <p>Acompañamos a estudios de arquitectura, constructoras y desarrolladores desde el anteproyecto hasta
+                    la documentación ejecutiva, incluyendo:</p>
+                <ul class="services-list">
+                    <li><i class="fas fa-check-circle"></i> Revisión y optimización de proyectos</li>
+                    <li><i class="fas fa-check-circle"></i> Refuerzo y rehabilitación estructural</li>
+                    <li><i class="fas fa-check-circle"></i> Análisis de patologías estructurales</li>
+                    <li><i class="fas fa-check-circle"></i> Asistencia técnica en obra</li>
+                </ul>
+                <p>Con base en La Rioja, trabajamos de forma remota en toda Argentina, brindando soluciones técnicas de
+                    alta calidad y precisión para cada proyecto.</p>
+                <a href="servicios.html" class="btn btn-primary">Ver Todos los Servicios</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Services -->
+    <section id="servicios" class="services-section">
+        <div class="container">
+            <div class="services-header">
+                <h2 class="section-title">Nuestros Servicios</h2>
+                <p class="services-description">Soluciones integrales de ingeniería estructural con tecnología de
+                    vanguardia</p>
+            </div>
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="service-info">
+                        <h3>Diseño y Cálculo de Estructuras</h3>
+                        <p>Diseño sísmico y cálculo de estructuras metálicas y de hormigón armado, cimentaciones,
+                            monopostes para cartelería, estructuras premoldeadas, estructuras auxiliares y temporales,
+                            Steel framing, elaboración de detalles constructivos necesarios para la correcta fabricación
+                            de los elementos.</p>
+                        <a href="servicios.html" class="read-more">Ver detalles →</a>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="service-info">
+                        <h3>Evaluación de Estructuras Existentes</h3>
+                        <p>Relevamiento y cateo de estructura en edificaciones existentes, examinamos las memorias de
+                            cálculo y planos estructurales, estudiamos el procedimiento constructivo, la correcta
+                            ejecución de los armados, y así también podemos verificar la estructura existente con el
+                            ensayo más conveniente.</p>
+                        <a href="servicios.html" class="read-more">Ver detalles →</a>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <div class="service-info">
+                        <h3>Asesoría y Consultoría</h3>
+                        <p>Contanos tus ideas y proyectos, te asesoramos con nuestra experiencia y conocimiento técnico
+                            para garantizar la mejor solución estructural para tus necesidades.</p>
+                        <a href="servicios.html" class="read-more">Ver detalles →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Location Map Section -->
+    <section id="ubicacion" class="location-section">
+        <div class="container">
+            <h2 class="section-title">Nuestras Ubicaciones</h2>
+            <div class="location-grid">
+                <div class="location-card main-office">
+                    <div class="location-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Sede Principal</h3>
+                    <p>Catamarca N°43, La Rioja Capital (CP5300)</p>
+                    <a href="#contacto">CONTACTAR →</a>
+                </div>
+            </div>
+            <div class="location-map">
+                <h3>Visítanos en Nuestra Sede Principal</h3>
+                <div class="map-container" style="margin-top: 30px;">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3476.35417834521!2d-66.8569!3d-29.4146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9427db9140645f77%3A0x6b77c3e7f9e80c8e!2sLa%20Rioja!5e0!3m2!1ses!2sar!4v1690000000000!5m2!1ses!2sar"
+                        width="100%" height="400" style="border:0; border-radius: 15px;" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects (Scroll Animation) -->
+    <section id="proyectos" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">Proyectos Destacados</h2>
+
+            <!-- Project 1: Edificio Estrada I -->
+            <div class="project-card left-enter">
+                <div class="project-image">
+                    <div class="project-slideshow" data-project="estrada">
+                        <div class="slideshow-container">
+                            <img src="WEB Site/Edificio Estrada I/Fachada.jpg" class="slide active"
+                                alt="Edificio Estrada I - Fachada">
+                            <img src="WEB Site/Edificio Estrada I/fachada 2.jpg" class="slide"
+                                alt="Edificio Estrada I - Vista">
+                            <img src="WEB Site/Edificio Estrada I/Planta PB.jpg" class="slide"
+                                alt="Edificio Estrada I - Planta Baja">
+                            <img src="WEB Site/Edificio Estrada I/Planta PA.jpg" class="slide"
+                                alt="Edificio Estrada I - Planta Alta">
+                            <img src="WEB Site/Edificio Estrada I/circulacion vertical.jpg" class="slide"
+                                alt="Edificio Estrada I - Circulación">
+                            <img src="WEB Site/Edificio Estrada I/corte longitudinal.jpg" class="slide"
+                                alt="Edificio Estrada I - Corte">
+                        </div>
+                        <button class="slide-nav prev"><i class="fas fa-chevron-left"></i></button>
+                        <button class="slide-nav next"><i class="fas fa-chevron-right"></i></button>
+                        <div class="slide-dots"></div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Edificio Estrada I</h3>
+                    <div class="project-meta">
+                        <span><strong>Cliente:</strong> Grupo Estrada</span>
+                        <span><strong>Ciudad:</strong> La Rioja Capital</span>
+                    </div>
+                    <p>Edificio Estrada I es un complejo residencial de 18 departamentos desarrollado sobre una
+                        superficie total de 850 m², distribuidos en 4 plantas. El proyecto fue resuelto mediante un
+                        sistema estructural independiente de hormigón armado, diseñado para garantizar seguridad,
+                        durabilidad y eficiencia constructiva.</p>
+                    <div class="project-scope">
+                        <h4>Alcance de servicios:</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Estudio de suelos</li>
+                            <li><i class="fas fa-check"></i> Diseño estructural integral</li>
+                            <li><i class="fas fa-check"></i> Cálculo y dimensionamiento de la estructura</li>
+                            <li><i class="fas fa-check"></i> Documentación técnica para ejecución</li>
+                        </ul>
+                    </div>
+                    <div class="project-stats-mini">
+                        <span>18 Deptos</span>
+                        <span>850 m²</span>
+                        <span>4 Plantas</span>
+                    </div>
+                    <a href="#contacto" class="btn btn-primary">Consultar Proyecto</a>
+                </div>
+            </div>
+
+            <!-- Project 2: Complejo Deportivo -->
+            <div class="project-card right-enter">
+                <div class="project-image">
+                    <div class="project-slideshow" data-project="deportivo">
+                        <div class="slideshow-container">
+                            <img src="WEB Site/Complejo Deportivo - Canchas de Padel/Alt 1 1.jpg" class="slide active"
+                                alt="Complejo Deportivo - Vista 1">
+                            <img src="WEB Site/Complejo Deportivo - Canchas de Padel/Alt 1 2.jpg" class="slide"
+                                alt="Complejo Deportivo - Vista 2">
+                            <img src="WEB Site/Complejo Deportivo - Canchas de Padel/Alt 2 1.jpg" class="slide"
+                                alt="Complejo Deportivo - Estructura">
+                            <img src="WEB Site/Complejo Deportivo - Canchas de Padel/Alt 2 2.jpg" class="slide"
+                                alt="Complejo Deportivo - Detalle">
+                            <img src="WEB Site/Complejo Deportivo - Canchas de Padel/Alt 2 3.jpg" class="slide"
+                                alt="Complejo Deportivo - Final">
+                        </div>
+                        <button class="slide-nav prev"><i class="fas fa-chevron-left"></i></button>
+                        <button class="slide-nav next"><i class="fas fa-chevron-right"></i></button>
+                        <div class="slide-dots"></div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Complejo Deportivo – Canchas de Pádel</h3>
+                    <div class="project-meta">
+                        <span><strong>Cliente:</strong> FMC Distribuciones S.R.L</span>
+                        <span><strong>Ciudad:</strong> La Rioja Capital</span>
+                    </div>
+                    <p>Nave de 672 m², desarrollada en una planta única diseñada para albergar 2 canchas de pádel
+                        profesionales. El proyecto fue resuelto mediante una estructura metálica principal con sistemas
+                        mixtos acero–hormigón para cubrir grandes luces sin apoyos intermedios.</p>
+                    <div class="project-scope">
+                        <h4>Alcance de servicios:</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Diseño estructural integral</li>
+                            <li><i class="fas fa-check"></i> Cálculo de estructura metálica</li>
+                            <li><i class="fas fa-check"></i> Diseño de elementos mixtos</li>
+                            <li><i class="fas fa-check"></i> Documentación técnica para fabricación</li>
+                        </ul>
+                    </div>
+                    <div class="project-stats-mini">
+                        <span>672 m²</span>
+                        <span>2 Canchas</span>
+                        <span>Estructura Metálica</span>
+                    </div>
+                    <a href="#contacto" class="btn btn-primary">Consultar Proyecto</a>
+                </div>
+            </div>
+
+            <!-- Project 3: Vivienda Unifamiliar -->
+            <div class="project-card left-enter">
+                <div class="project-image">
+                    <div class="project-slideshow" data-project="vivienda">
+                        <div class="slideshow-container">
+                            <img src="WEB Site/Vivienda Unifamiliar/1.JPG" class="slide active"
+                                alt="Vivienda Unifamiliar - Vista 1">
+                            <img src="WEB Site/Vivienda Unifamiliar/WhatsApp Image 2026-02-26 at 09.22.33.jpeg"
+                                class="slide" alt="Vivienda Unifamiliar - Obra">
+                            <img src="WEB Site/Vivienda Unifamiliar/E1.JPG" class="slide"
+                                alt="Vivienda Unifamiliar - Estructura 1">
+                            <img src="WEB Site/Vivienda Unifamiliar/e2.JPG" class="slide"
+                                alt="Vivienda Unifamiliar - Estructura 2">
+                            <img src="WEB Site/Vivienda Unifamiliar/e3.JPG" class="slide"
+                                alt="Vivienda Unifamiliar - Losas">
+                            <img src="WEB Site/Vivienda Unifamiliar/axonometrica posterior.JPG" class="slide"
+                                alt="Vivienda Unifamiliar - Axonométrica">
+                        </div>
+                        <button class="slide-nav prev"><i class="fas fa-chevron-left"></i></button>
+                        <button class="slide-nav next"><i class="fas fa-chevron-right"></i></button>
+                        <div class="slide-dots"></div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Vivienda Unifamiliar</h3>
+                    <div class="project-meta">
+                        <span><strong>Cliente:</strong> Arq. Cejas Mariño</span>
+                        <span><strong>Ciudad:</strong> La Rioja Capital</span>
+                    </div>
+                    <p>Vivienda de 250 m² en dos plantas. Sistema estructural independiente de hormigón armado con
+                        combinación de losas macizas y alivianadas, optimizando el comportamiento estructural y el uso
+                        racional de materiales.</p>
+                    <div class="project-scope">
+                        <h4>Alcance de servicios:</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Estudio de suelos</li>
+                            <li><i class="fas fa-check"></i> Diseño estructural integral</li>
+                            <li><i class="fas fa-check"></i> Cálculo de fundaciones</li>
+                            <li><i class="fas fa-check"></i> Verificación de losas macizas y alivianadas</li>
+                        </ul>
+                    </div>
+                    <div class="project-stats-mini">
+                        <span>250 m²</span>
+                        <span>2 Plantas</span>
+                        <span>Hormigón Armado</span>
+                    </div>
+                    <a href="#contacto" class="btn btn-primary">Consultar Proyecto</a>
+                </div>
+            </div>
+
+
+ <!-- Proyect 4: Galpon Comercial -->
+<div class="project-card right-enter">
+                <div class="project-image">
+                    <div class="project-slideshow" data-project="comercial">
+                        <div class="slideshow-container">
+                            <img src="WEB Site/Complejo Deportivo - Canchas de Padel/Alt 1 1.jpg" class="slide active"
+                                alt="Complejo Deportivo - Vista 1">
+                            <img src="WEB Site/Complejo Deportivo - Canchas de Padel/Alt 1 2.jpg" class="slide"
+                                alt="Complejo Deportivo - Vista 2">
+                            <img src="WEB Site/Complejo Deportivo - Canchas de Padel/Alt 2 1.jpg" class="slide"
+                                alt="Complejo Deportivo - Estructura">
+                            <img src="WEB Site/Complejo Deportivo - Canchas de Padel/Alt 2 2.jpg" class="slide"
+                                alt="Complejo Deportivo - Detalle">
+                            <img src="WEB Site/Complejo Deportivo - Canchas de Padel/Alt 2 3.jpg" class="slide"
+                                alt="Complejo Deportivo - Final">
+                        </div>
+                        <button class="slide-nav prev"><i class="fas fa-chevron-left"></i></button>
+                        <button class="slide-nav next"><i class="fas fa-chevron-right"></i></button>
+                        <div class="slide-dots"></div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Galpón Comercial</h3>
+                    <div class="project-meta">
+                        <span><strong>Cliente:</strong> Grupo Lapachos</span>
+                        <span><strong>Ciudad:</strong> La Rioja Capital</span>
+                    </div>
+                    <p>Proyecto integral de diseño arquitectónico y estructural para un galpón de 247 m², destinado a actividad comercial.
+                      La propuesta fue desarrollada contemplando funcionalidad, eficiencia constructiva y adaptabilidad del espacio según las 
+                      necesidades operativas del emprendimiento.</p>
+                    <div class="project-scope">
+                        <h4>Alcance de servicios:</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Estudio de suelos</li>
+                            <li><i class="fas fa-check"></i> Diseño del proyecto arquitectónico</li>
+                            <li><i class="fas fa-check"></i> Diseño estructural integral</li>
+                            <li><i class="fas fa-check"></i> Cálculo y dimensionamiento de la estructura</li>
+                        </ul>
+                    </div>
+                    <div class="project-stats-mini">
+                        <span>247 m²</span>
+                        <span>Estructura segura</span>
+                        <span>Diseño arquitectónico y estructural</span>
+                    </div>
+                    <a href="#contacto" class="btn btn-primary">Consultar Proyecto</a>
+                </div>
+            </div>
+
+
+               <!-- Proyect 5: Reconversion de vivienda a locales comerciales y oficinas -->
+                <div class="project-card left-enter">
+                <div class="project-image">
+                    <div class="project-slideshow" data-project="reconversion">
+                        <div class="slideshow-container">
+                            <img src="WEB site/Reconversion de viviendas a locales comerciales y oficinas/render fachada.JPG" class="slide active"
+                                alt="Reconversion de viviendas - Vista 1">
+                            <img src="WEB site/Reconversion de viviendas a locales comerciales y oficinas/RENDER FACHADA 2.JPG"
+                                class="slide" alt="Reconversion de viviendas - Vista 2">
+                            <img src="WEB site/Reconversion de viviendas a locales comerciales y oficinas/Modelo Estructural.JPG" class="slide"
+                                alt="Reconversion de viviendas - Estructura">
+                            <img src="WEB site/Reconversion de viviendas a locales comerciales y oficinas/RENDER ISOMETRICO 2.JPG" class="slide"
+                                alt="Reconversion de viviendas - Isometrico">
+                            <img src="WEB site/Reconversion de viviendas a locales comerciales y oficinas/WhatsApp Image 2026-01-22 at 09.28.11 (1).jpeg" class="slide"
+                                alt="Reconversion de viviendas - Contruccion">
+                            <img src="WEB site/Reconversion de viviendas a locales comerciales y oficinas/WhatsApp Image 2026-01-22 at 09.36.59.jpeg" class="slide"
+                                alt="Reconversion de viviendas - Construccion 2">
+                        </div>
+                        <button class="slide-nav prev"><i class="fas fa-chevron-left"></i></button>
+                        <button class="slide-nav next"><i class="fas fa-chevron-right"></i></button>
+                        <div class="slide-dots"></div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Reconversión de Vivienda a Locales Comerciales y Oficinas</h3>
+                    <div class="project-meta">
+                        <span><strong>Cliente:</strong> Ing. Matias Vega</span>
+                        <span><strong>Ciudad:</strong> La Rioja Capital</span>
+                    </div>
+                    <p>Proyecto de readecuación y cambio de uso de una vivienda existente, con una superficie total proyectada de 278 m², 
+                        transformada en locales comerciales en planta baja y oficinas en planta alta.
+                      La intervención requirió un análisis estructural integral para adaptar la edificación 
+                      a nuevas exigencias de carga y funcionalidad.
+                    El proyecto fue desarrollado garantizando seguridad estructural, compatibilidad con la estructura original y 
+                    optimización de recursos, asegurando una transición eficiente del uso residencial al comercial.</p>
+                    <div class="project-scope">
+                        <h4>Alcance de servicios:</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Estudio de suelos</li>
+                            <li><i class="fas fa-check"></i> Evaluación estructural de la edificación existente</li>
+                            <li><i class="fas fa-check"></i> Diseño de refuerzos estructurales</li>
+                            <li><i class="fas fa-check"></i> Cálculo y verificación de los nuevos elementos resistentes</li>
+                        </ul>
+                    </div>
+                    <div class="project-stats-mini">
+                        <span>278 m²</span>
+                        <span>2 Plantas</span>
+                        <span>Readecuación y cambio de uso</span>
+                    </div>
+                    <a href="#contacto" class="btn btn-primary">Consultar Proyecto</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Proyect 6: Pérgola Metálica – Área Social en Predio Deportivo -->
+         <div class="project-card right-enter">
+                <div class="project-image">
+                    <div class="project-slideshow" data-project="pergola">
+                        <div class="slideshow-container">
+                            <img src="WEB site/Pergola metalica - Area social en predio deportivo/Escala club.JPG" class="slide active"
+                                alt="Pergola Metalica - Escala">
+                            <img src="WEB site/Pergola metalica - Area social en predio deportivo/Imagen.JPG" class="slide"
+                                alt="Pergola Metalica - Escala 2">
+                            <img src="WEB site/Pergola metalica - Area social en predio deportivo/Plano detalles pergola.jpg" class="slide"
+                                alt="Pergola Metalica - Planos">
+                            <img src="WEB site/Pergola metalica - Area social en predio deportivo/WhatsApp Image 2026-02-26 at 09.16.44.jpeg" class="slide"
+                                alt="Pergola Metalica - Vista 1">
+                            <img src="WEB site/Pergola metalica - Area social en predio deportivo/WhatsApp Image 2026-02-26 at 09.16.45.jpeg" class="slide"
+                                alt="Pergola Metalica - Vista 2">
+                                <img src="WEB site/Pergola metalica - Area social en predio deportivo/WhatsApp Image 2026-02-26 at 09.16.47.jpeg" class="slide"
+                                alt="Pergola Metalica - Vista 3">
+                        </div>
+                        <button class="slide-nav prev"><i class="fas fa-chevron-left"></i></button>
+                        <button class="slide-nav next"><i class="fas fa-chevron-right"></i></button>
+                        <div class="slide-dots"></div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Pérgola Metálica – Área Social en Predio Deportivo
+</h3>
+                    <div class="project-meta">
+                        <span><strong>Cliente:</strong> Scala Club S.R.L</span>
+                        <span><strong>Ciudad:</strong> La Rioja Capital</span>
+                    </div>
+                    <p>Diseño y cálculo estructural de una pérgola metálica de 32 m², concebida como espacio semicubierto de recreación y encuentro dentro de un predio deportivo de pádel.
+La estructura fue resuelta íntegramente en sistema metálico, priorizando liviandad, eficiencia constructiva y una integración armónica con el entorno deportivo.
+Debido a su emplazamiento en una zona de fuertes ráfagas de viento, se realizó la verificación específica de las solicitaciones eólicas, asegurando estabilidad global, correcto diseño de anclajes y comportamiento estructural adecuado frente a acciones horizontales.
+</p>
+                    <div class="project-scope">
+                        <h4>Alcance de servicios:</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Diseño estructural</li>
+                            <li><i class="fas fa-check"></i> Cálculo y dimensionamiento de perfiles metálicos</li>
+                            <li><i class="fas fa-check"></i> Verificación frente a cargas de viento</li>
+                            <li><i class="fas fa-check"></i> Diseño de uniones y anclajes</li>
+                        </ul>
+                    </div>
+                    <div class="project-stats-mini">
+                        <span>32 m²</span>
+                        <span>Sistema metalico</span>
+                        <span>Espacio semicubierto</span>
+                    </div>
+                    <a href="#contacto" class="btn btn-primary">Consultar Proyecto</a>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+    <!-- Additional Locations -->
+    <section class="additional-locations-section">
+        <div class="container">
+            <h2 class="section-title">Presencia en Todo el País</h2>
+            <div class="additional-locations-grid">
+                <div class="location-item">
+                    <div class="location-icon-large">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <div class="location-details">
+                        <h3>Noroeste Argentino</h3>
+                        <p>Cobertura completa en provincias del NOA con proyectos de infraestructura vial y
+                            edificaciones industriales.</p>
+                        <ul class="location-features">
+                            <li><i class="fas fa-check"></i> Ingeniería estructural</li>
+                            <li><i class="fas fa-check"></i> Consultoría técnica</li>
+                            <li><i class="fas fa-check"></i> Asistencia en obra</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="location-item">
+                    <div class="location-icon-large">
+                        <i class="fas fa-city"></i>
+                    </div>
+                    <div class="location-details">
+                        <h3>Región Centro</h3>
+                        <p>Proyectos destacados en edificaciones corporativas y centros comerciales de alta complejidad
+                            técnica.</p>
+                        <ul class="location-features">
+                            <li><i class="fas fa-check"></i> Diseño estructural avanzado</li>
+                            <li><i class="fas fa-check"></i> Análisis sísmico</li>
+                            <li><i class="fas fa-check"></i> Optimización de costos</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="location-item">
+                    <div class="location-icon-large">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <div class="location-details">
+                        <h3>Patagonia</h3>
+                        <p>Desarrollo de proyectos industriales y estructuras especiales para condiciones climáticas
+                            extremas.</p>
+                        <ul class="location-features">
+                            <li><i class="fas fa-check"></i> Estructuras especiales</li>
+                            <li><i class="fas fa-check"></i> Ingeniería en altura</li>
+                            <li><i class="fas fa-check"></i> Materiales innovadores</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section (Moved below locations) -->
+    <section id="contacto" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contactanos</h2>
+            <p class="contact-description">Estamos listos para llevar tu proyecto al siguiente nivel. Escribinos y
+                nuestro equipo técnico se pondrá en contacto a la brevedad.</p>
+
+            <div class="contact-buttons">
+                <a href="https://api.whatsapp.com/send/?phone=5493804219641&text=Hola%20MAES%20Estudio%20de%20Ingeniería,%20me%20gustaría%20consultar%20sobre%20un%20proyecto"
+                    class="btn-whatsapp" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-whatsapp"></i> ENVIAR WHATSAPP
+                </a>
+
+                <div class="contact-info-simple">
+                    <div class="contact-item-simple">
+                        <i class="fas fa-phone"></i>
+                        <span>(+54) 3804 219641</span>
+                    </div>
+                    <div class="contact-item-simple">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@maesingenieria.com.ar</span>
+                    </div>
+                    <div class="contact-item-simple">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Catamarca N°43, La Rioja Capital (CP5300)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="faq-header">
+                <span class="faq-subtitle">Preguntas Frecuentes</span>
+                <h2 class="section-title">Resolvemos tus dudas</h2>
+            </div>
+
+            <div class="faq-accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h4>¿En qué zonas del país realizan proyectos?</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Si bien nuestra sede principal se encuentra en La Rioja, trabajamos de forma remota y
+                            presencial en toda Argentina, brindando soluciones técnicas a estudios y constructoras de
+                            todo el país.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h4>¿Con qué materiales trabajan para el cálculo estructural?</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Somos especialistas en diseño y cálculo de estructuras en Hormigón Armado, Acero (estructuras
+                            metálicas y Steel Framing) y Madera.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h4>¿Realizan inspecciones y cateos en edificios existentes?</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Sí, realizamos relevamientos, cateos y verificación de estructuras existentes para determinar
+                            su capacidad portante, identificar patologías o proyectar ampliaciones y refuerzos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marquee Animation -->
+    <div class="logo-marquee">
+        <div class="marquee-content">
+            <!-- First Set -->
+            <div class="marquee-item">
+                <img src="materials/Recurso 2@2x.png" alt="MAES">
+                <span class="marquee-text">Ingeniería que avanza</span>
+            </div>
+            <div class="marquee-item">
+                <img src="materials/Recurso 2@2x.png" alt="MAES">
+                <span class="marquee-text">Ingeniería que avanza</span>
+            </div>
+            <div class="marquee-item">
+                <img src="materials/Recurso 2@2x.png" alt="MAES">
+                <span class="marquee-text">Ingeniería que avanza</span>
+            </div>
+            <div class="marquee-item">
+                <img src="materials/Recurso 2@2x.png" alt="MAES">
+                <span class="marquee-text">Ingeniería que avanza</span>
+            </div>
+            <div class="marquee-item">
+                <img src="materials/Recurso 2@2x.png" alt="MAES">
+                <span class="marquee-text">Ingeniería que avanza</span>
+            </div>
+            <!-- Second Set (Duplicate for smooth scroll) -->
+            <div class="marquee-item">
+                <img src="materials/Recurso 2@2x.png" alt="MAES">
+                <span class="marquee-text">Ingeniería que avanza</span>
+            </div>
+            <div class="marquee-item">
+                <img src="materials/Recurso 2@2x.png" alt="MAES">
+                <span class="marquee-text">Ingeniería que avanza</span>
+            </div>
+            <div class="marquee-item">
+                <img src="materials/Recurso 2@2x.png" alt="MAES">
+                <span class="marquee-text">Ingeniería que avanza</span>
+            </div>
+            <div class="marquee-item">
+                <img src="materials/Recurso 2@2x.png" alt="MAES">
+                <span class="marquee-text">Ingeniería que avanza</span>
+            </div>
+            <div class="marquee-item">
+                <img src="materials/Recurso 2@2x.png" alt="MAES">
+                <span class="marquee-text">Ingeniería que avanza</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="materials/Recurso 2@2x.png" alt="MAES Logo" style="height: 40px;">
+                </div>
+                <div class="footer-contact">
+                    <p style="margin: 5px 0;"><i class="fas fa-phone"></i> (+54) 3804 219641</p>
+                    <p style="margin: 5px 0;"><i class="fas fa-envelope"></i> info@maesingenieria.com.ar</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/people/maesingenieria/100068295727493/" target="_blank"
+                        rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/maesingenieria/" target="_blank" rel="noopener noreferrer"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/maes-estudio/" target="_blank"
+                        rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2026 MAES Estudio de Ingeniería. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
