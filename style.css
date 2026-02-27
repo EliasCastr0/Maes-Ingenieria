@@ -1766,10 +1766,16 @@ h3 {
 @media (max-width: 900px) {
     .why-us-container {
         grid-template-columns: 1fr;
+        padding: 20px;
     }
 
     .why-us-text {
-        padding: 40px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .why-us-text h2 {
+        font-size: 1.5rem;
     }
 
     .contact-faq-container {
@@ -1778,24 +1784,61 @@ h3 {
 
     .projects-section .project-card {
         flex-direction: column !important;
-        /* Force stack */
-    }
-
-    .location-grid {
-        grid-template-columns: 1fr;
     }
 }
 
 @media (max-width: 768px) {
     .header-container {
-        position: relative;
+        padding: 0 15px;
     }
 
-    .main-header {
-        background: transparent !important;
-        box-shadow: none !important;
-        border: none !important;
-        top: 10px;
+    .logo-img {
+        height: 35px;
+    }
+
+    .hero-title {
+        font-size: 2rem !important;
+        line-height: 1.2;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    .hero-badge {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    .why-us-stats {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .stat-item {
+        padding: 20px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .footer-social {
+        justify-content: center;
     }
 
     .nav-menu {
@@ -1806,64 +1849,67 @@ h3 {
         width: 100%;
         background: var(--secondary-color);
         flex-direction: column;
-        padding: 30px 20px;
-        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-        text-align: center;
-        border-radius: 20px;
-        margin-top: 10px;
-        animation: slideDownMobile 0.4s ease forwards;
-    }
-
-    @keyframes slideDownMobile {
-        from {
-            opacity: 0;
-            transform: translateY(-20px);
-        }
-
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-
-    .nav-menu li a {
-        color: white;
-        padding: 15px 0;
-        display: block;
-        font-size: 16px;
+        padding: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     }
 
     .nav-menu.active {
         display: flex;
     }
+}
 
-    .menu-toggle {
-        display: block;
-        margin-left: auto;
-        margin-right: 20px;
+/* Clientes Marquee */
+.clients-section {
+    padding: 60px 0;
+    background: #f8fbfc;
+    overflow: hidden;
+}
+
+.clients-title {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.clients-marquee {
+    display: flex;
+    width: max-content;
+    animation: clients-scroll 40s linear infinite;
+}
+
+.client-logo {
+    height: 60px;
+    width: auto;
+    filter: grayscale(100%);
+    opacity: 0.6;
+    transition: all 0.3s ease;
+    margin: 0 50px;
+}
+
+.client-logo:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+@keyframes clients-scroll {
+    from {
+        transform: translateX(0);
     }
 
-    .social-icons {
-        display: none;
-        /* Hide social on small mobile */
+    to {
+        transform: translateX(-50%);
     }
+}
 
-    .hero-title {
-        font-size: 2.5rem;
-    }
-
-    .about-container {
-        grid-template-columns: 1fr;
-    }
-
-    .why-us-stats {
-        grid-template-columns: 1fr;
-        /* Stack stats */
-    }
-
-    .contact-form-wrapper,
-    .faq-wrapper {
-        padding: 40px 20px;
+@media (max-width: 480px) {
+    .client-logo {
+        height: 40px;
+        margin: 0 25px;
     }
 }
 
